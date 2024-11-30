@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event JS</title>
+</head>
+
+<body>
+    <h1 style="background-color: aqua;">Dom er ajke special events</h1>
+    <button onclick="console.log('the c')">Click me</button> <br> <br>
+    <button onclick="console.log(65)">Another Click me</button> <br><br>
+    <button onclick="makeAqua()">Aqua</button>
+    <br><br>
+<!-- Option 1 -->
+    <button onclick="document.body.style.backgroundColor='bisque'">Make yellow</button> <br> <br>
+<!-- Option Four -->
+    <button id="make-pink">Make pink</button>
+    <br> <br>
+<!-- Option 3 -->
+    <button id="make-blue">Make blue</button>
+    <br>  <br>
+<!-- Option 3 another -->
+    <button id="make-purple">Make purple</button>
+    <br> <br>
+<!-- Option four another -->
+    <button id="make-green">Make green</button>
+    <br> <br>
+    <button id="make-goldenrod">Make GoldenROd</button>
+    <script src="js/events.js"></script>
+    <script>
+      document.getElementById('make-goldenrod').addEventListener('click', function (){
+        document.body.style.backgroundColor="tomato"
+      })
+    </script>
+</body>
+
+</html>
